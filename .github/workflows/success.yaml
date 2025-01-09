@@ -1,0 +1,14 @@
+name: Always Success Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  always-success:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Echo
+      run: echo "Build complete."
